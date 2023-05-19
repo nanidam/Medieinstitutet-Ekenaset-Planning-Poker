@@ -1,0 +1,33 @@
+version: '3'
+volumes:
+  dbdata:
+services: 
+  db:
+    image: mongodb/mongodb-community-server
+    container_name: mongodb
+    hostname: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - dbdata:/data/db
+    restart: unless-stopped
+  
+  server:
+    build: ./backend
+    container_name: backend
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    
+  client:
+    build: ./frontend
+    container_name: frontend
+    # image: frontend
+    depends_on:
+      - server
+    ports:
+      - "80:4173"
+    restart: unless-stopped
+

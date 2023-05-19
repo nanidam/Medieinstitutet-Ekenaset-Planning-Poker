@@ -1,0 +1,89 @@
+.unrated-tasks-container {
+  height: 400px;
+  width: 500px;
+  margin: 15px;
+  background-color: #4e4e4e;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+
+  .unrated-task-title {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .unrated-tasks-list {
+    background-color: rgb(255, 255, 255);
+    height: 60%;
+    padding-top: 20px;
+    margin: 0 10px 7px;
+    // border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 1rem;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #505050;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f2b138;
+      border-radius: 2px;
+    }
+
+    .unrated-task {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .unrated-task-btn {
+      border: none;
+      background-color: transparent;
+      transition: 0.2s ease-in-out;
+
+      &:hover { 
+        background-color: #ecc0679f;
+      }
+    }
+  }
+
+  .add-task-form {
+    display: flex;
+    align-items: center;
+
+    .add-task-input {
+      width: 90%;
+      height: 40px;
+      margin-left: 10px;
+      margin-top: 5px;
+      border-radius: 15px;
+    }
+
+    .add-task-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #87ae9b;
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+      font-size: 2rem;
+      font-weight: bolder;
+      padding-bottom: 6px;
+
+      &:hover {
+        background-color: #377456;
+      }
+    }
+  }
+}

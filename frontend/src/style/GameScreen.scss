@@ -1,0 +1,80 @@
+.game-top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh / 3);
+  width: 100%;
+
+  .player-name-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 200px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+    button {
+      background-color: #4e4e4e;
+      border: none;
+      border-radius: 5px;
+      color: #f2b138;
+      height: 50px;
+      width: 150px;
+      margin-top: 1rem;
+      margin-left: -30px;
+      font-size: 1rem;
+      font-weight: 400;
+      transition: 0.3s ease-in-out;
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    }
+  }
+
+  button:hover {
+    background-color: #222222;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.game-middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-bottom-section {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+
+  .vote-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    .submit-vote-btn,
+    .logout-btn {
+      background-color: #4e4e4e;
+      border: none;
+      border-radius: 5px;
+      color: #f2b138;
+      height: 50px;
+      width: 150px;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 400;
+      transition: 0.3s ease-in-out;
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    }
+
+    .submit-vote-btn:hover,
+    .logout-btn:hover {
+      background-color: #222222;
+    }
+  }
+}

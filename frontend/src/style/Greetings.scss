@@ -1,0 +1,26 @@
+.player-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 13%;
+  height: 50%;
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  .greeting {
+    margin: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+
+    .player-name {
+      display: block;
+      margin-top: 5px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+    }
+  }
+}
